@@ -36,9 +36,13 @@ defmodule Network do
 
     ## forward propagation
     hidden_inputs = Matrex.dot(network.hidden_weights, Matrex.new(input_data)) |> Matrex.apply(&sigmoid/1)
-    # apply sigmoid
-    Matrex.dot(network.output_weights, hidden_inputs)
-    # apply sigmoid
+
+    Matrex.dot(network.output_weights, hidden_inputs) |> Matrex.apply(&sigmoid/1)
+
+  end
+
+  def train(input_data, target_data) do
+    inputs = Matrex.new(input_data)
   end
 
   def sigmoid(value) do
