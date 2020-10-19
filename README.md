@@ -4,6 +4,8 @@
 
 **TODO: Add description**
 
+Based on https://sausheong.github.io/posts/how-to-build-a-simple-artificial-neural-network-with-go/
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
